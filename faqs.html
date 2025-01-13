@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQS / Maestro88</title>
+    <link rel="stylesheet" type="text/css" href="desktopstyle.css" />
+    <link rel="stylesheet" type="text/css" href="mobilestyle.css" />
+    <link rel="stylesheet" type="text/css" href="./FAQs/faqstyle.css" />
+</head>
+<style></style>
+<body>
+  <header>
+    <!-- Navigation Bari Desktop -->
+      <nav id="desktop-nav">
+        <div class="logo">M88</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Pricing</a></li>
+            <button class="hire-me-nav" onclick="location.href='hire.html'">Hire Me</button>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- Navigation Bari Mobile -->
+      <nav id="mobile-nav">
+        <div class="logo">M88</div>
+        <div class="mobile-menu">
+          <div class="navigator-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="services.html" onclick="toggleMenu()">Pricing</a></li>
+            <li><a href="hire.html" onclick="toggleMenu()">Hire Me</a></li>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+    
+    <Section id="head">
+    <h1>FAQs</h1>
+    <h4>Answers to the most asked questions</h4>
+    </Section>
+
+    <section id="faq">
+
+      <div class="faq-item">
+        <button class="faq-question">What services do you offer?</button>
+        <div class="faq-answer">
+          <p>We offer web development, UI/UX design, digital marketing, and content creation services.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How can I hire you?</button>
+        <div class="faq-answer">
+          <p>You can hire me by clicking the 'Hire Me' button in the navigation bar.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What is the pricing for your services?</button>
+        <div class="faq-answer">
+          <p>Pricing varies depending on the project. Please contact us for a custom quote.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+
+    
+</body>
+</html>

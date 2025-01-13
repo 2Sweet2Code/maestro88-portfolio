@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maestro88</title>
+    <link rel="stylesheet" type="text/css" href="desktopstyle.css" />
+    <link rel="stylesheet" type="text/css" href="mobilestyle.css" />
+</head>
+<body>
+    <!-- 1: Filloi programimi ne 12:02AM 9/1/2025 | Mbaroi 1:48AM | Progresi: Gjithe faqet html te mbaruara ne strukturim pergjithesisht. Ngelet stilizimi dhe skriptimi 
+     2: Filloi 10:26PM 9/1/2025 | Mbaroi 12:26AM | Progresi: CSS Navbar + Section 1
+     3: FIlloi 10:56PM 10/1/2025 | Mbaroi 12:49AM | Progresi: Section 2 ( Mos harro rreg imazhet ne fund)
+     4: Filloi 9:04PM 11/1/2025 | Mbaroi 10:37PM  | Progresi: Section 3 ( Need to fix other pages + FAQs possibly next time)
+     5: FIlloi 4:39PM 12/1/2025 | Mbaroi 8:48PM | Progresi: Optimizime Mobile, Faqja Services, Faqja FAQs (Left Only FAQs Optimization + Hire Me Website also favicon, also alt to images)
+     -->
+    <header>
+    <!-- Navigation Bari Desktop -->
+      <nav id="desktop-nav">
+        <div class="logo">M88</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Pricing</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <button class="hire-me-nav" onclick="location.href='hire.html'">Hire Me</button>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- Navigation Bari Mobile -->
+      <nav id="mobile-nav">
+        <div class="logo">M88</div>
+        <div class="mobile-menu">
+          <div class="navigator-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="services.html" onclick="toggleMenu()">Pricing</a></li>
+            <li><a href="faqs.html" onclick="toggleMenu()">FAQs</a></li>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <Section id="freelancer">
+        <!-- Seksioni me foto  -->
+         <div id="SectionImage">
+            <img src="./assets/Portrait.gigachad.png" alt="imazhi">
+         </div>
+         <div id="SectionText">
+            <p class="Sectionp1">Hello I'm...</p> 
+            <h1 class="">Erton Mara</h1>
+            <p> WEB Development, UI/UX/Graphic Design, Digital Marketing, Copywriting and Content Creation services.</p>
+         <div id="Section-Btns">
+            <button class="hire-me">HIRE ME</button>
+            <button class="previous-projects" onclick="location.href='#proj'" >PREVIOUS SERVICES</button>
+         </div>
+         </div>
+    </Section>
+
+    <Section id="work-process">
+         <div id="SectionText2">
+            <h1 class="SectionTitle2">Step-by-Step:<br>How We’ll Work Together</h1>
+            <p class="Sectionp2">
+              I’ll <b>research</b> your idea, <b>save</b> you time, and deliver <br>
+              results with a transparent <b>pay-per-job</b> model, <br>
+               including <b>demos/updates</b> ensuring your vision is clear.</p>
+         </div>
+         <img class="arrow" src="./assets/arrow-down.png">
+         <!-- Seksioni 4 kuadrate  -->
+         <div id="SectionBox">
+          <div> 
+           <img src="./assets/research.png" class="box1">
+           <img src="./assets/saving.png" class="box3">
+          </div>
+          <div> 
+            <img src="./assets/time.png" class="box2"> 
+            <img src="./assets/growth.png" class="box4">
+          </div>
+       </div>
+    </Section>
+
+    <Section id="projects">
+        <!-- Projektet e bera me perpara -->
+        <div id="proj" class="project-title">Types of Services</div>
+
+      <div id="container">
+
+        <div id="project1-card">
+            <img src="./assets/codingcard.png" class="project1-img" >
+          <div class="overlay">
+            <h1 class="project1-txt">Programming</h1>
+            <button onclick="location.href=''">Previous</button>
+            <button onclick="location.href=''">Learn More...</button>
+          </div>
+        </div>
+
+        <div id="project1-card">
+          <img src="./assets/graphiccard.png" class="project1-img" >
+        <div class="overlay">
+          <h1 class="project1-txt">UI/UX/Graphics</h1>
+          <button onclick="location.href=''">Previous</button>
+          <button onclick="location.href=''">Learn More...</button>
+        </div>
+      </div>
+
+      <div id="project1-card">
+        <img src="./assets/writingcard.png" class="project1-img" >
+      <div class="overlay">
+        <h1 class="project1-txt">Writing<br>&<br>Content Managment</h1>
+        <button onclick="location.href=''">Previous</button>
+        <button onclick="location.href=''">Learn More...</button>
+      </div>
+    </div>
+
+    </div>
+
+    </Section>
+
+    <!-- Mobile "Hire Me" Button -->
+    <button class="hire-me-mobile" onclick="location.href='hire.html'">Hire Me</button>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top">↑</button>
+
+
+    <section id="page-end">
+      <footer>
+        <p>&copy; 2025 Maestro88. All rights reserved.</p>
+      </footer>
+    </section>
+
+<script src="./script.js"></script>
+</body>
+</html>

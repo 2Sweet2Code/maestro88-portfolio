@@ -1,0 +1,244 @@
+/* General Mobile Styles */
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+      display: none;
+  }
+  #mobile-nav {
+      display: flex;
+  }
+  .arrow {
+      display: none;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .hire-me-mobile{
+    display: none;
+  }
+  
+  
+}
+
+@media screen and (min-width: 1701px) {
+  #work-process{
+    gap: 10rem;
+  }   
+}
+
+/* Section 1: Freelancer Section (Mobile) */
+@media screen and (max-width: 900px) {
+  #freelancer {
+      flex-direction: column;
+      margin-top: 10vh;
+      margin-bottom: 15vh;
+      gap: 2rem;
+  }
+
+  #SectionText {
+      margin-left: 0;
+      width: 80%;
+      font-size: 20px;
+  }
+
+  #SectionText h1 {
+      font-size: 40px;
+  }
+
+  .Sectionp1 {
+      font-size: 18px;
+  }
+
+  #SectionImage {
+      width: 80%;
+  }
+}
+
+/* Section 2: Work Process (Mobile) */
+@media screen and (max-width: 900px) {
+  
+  #work-process {
+      flex-direction: column;
+      margin-bottom: 20vh;
+      align-items: center;/* Ensures it is centered */
+  }
+
+  .hire-me{
+    display: none;
+  }
+
+  #SectionText2{
+    margin-right: 10%;
+  }
+
+  #SectionBox {
+      flex-direction: column;
+      width: 100%;
+      max-height: 30vh;
+      gap: 2rem;
+      text-align: center; /* Centers the content */
+  }
+
+  .SectionTitle2 {
+      font-size: 40px;
+  }
+
+  .Sectionp2 {
+      font-size: 18px;
+  }
+
+  .box1, .box2, .box3, .box4 {
+      width: 100%;
+      height: 12vh;
+  }
+
+  .box1, .box2 {
+      margin-top: 3vh;
+  }
+}
+
+/* Section 3: Projects (Mobile) */
+@media screen and (max-width: 900px) {
+  .project-title {
+      font-size: 8vh;
+      margin-bottom: 2vh;
+  }
+
+  #container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #project1-card {
+      width: 90%;
+      height: auto;
+  }
+
+  /* Ensure images in Section 3 match preset resolution */
+  #container img {
+      width: 100%;  /* Adjusts image size for mobile */
+      height: auto;
+  }
+}
+
+/* "Hire Me" Button for Mobile */
+.hire-me-mobile {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  color: black;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 50px;
+  border: 2px solid black;  /* Adds black border */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+  text-align: center;
+}
+
+.hire-me-mobile:hover {
+  background-color: black;
+  color: white;
+}
+
+.hire-me-mobile:active {
+  transform: scale(0.98);
+}
+
+@media screen and (max-width: 900px) {
+  .hire-me-mobile {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+
+/* Arrow Button for Mobile */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: white; /* Changed to white background */
+  color: black;  /* Black text color */
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 50px;
+  border: 2px solid black;  /* Added black border */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+  text-align: center;
+  font-family: 'Arial', sans-serif;  /* Ensures proper font for arrow */
+}
+
+#back-to-top:hover {
+  background-color: black;
+  color: white;
+}
+
+#back-to-top:active {
+  transform: scale(0.98);
+}
+
+@media screen and (max-width: 900px) {
+  #back-to-top {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+#work-process img.arrow{
+  display: none;
+}
+
+#work-process{
+  gap: 5rem;
+}
+}
+
+/* Section 2: Remove Images under 1100px */
+@media screen and (max-width: 1200px) {
+  #SectionBox img {
+      display: none;
+  }
+  #SectionBox .SectionTitle2 {
+      text-align: center;
+  }
+}
+
+#work-process{
+  display: flex;
+      justify-content: center;
+      align-content: center;
+      margin-left: 10%;
+}
+
+/* Section 3: Fix Gaps at 1525px */
+@media screen and (min-width: 1525px) {
+  #SectionBox {
+      gap: 2rem;
+  }
+  #SectionBox .box1, #SectionBox .box2, #SectionBox .box3, #SectionBox .box4 {
+      margin-bottom: 1rem;
+  }
+}
+
+/* Section 3: Adjust Boxes at 768px */
+@media screen and (max-width: 900px) {
+  #SectionBox .box1, #SectionBox .box2, #SectionBox .box3, #SectionBox .box4 {
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+  }
+}
+
+/* Center Image at the Top of Section 1 */
+@media screen and (max-width: 900px) {
+  #SectionImage {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+}

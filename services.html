@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services / Maestro88</title>
+    <link rel="stylesheet" href="./services-more/servicesdstyle.css" />
+    <link rel="stylesheet" type="text/css" href="desktopstyle.css" />
+    <link rel="stylesheet" type="text/css" href="mobilestyle.css" />
+</head>
+<body>
+  <header>
+    <nav id="desktop-nav">
+      <div class="logo">M88</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <button class="hire-me-nav" onclick="location.href='hire.html'">Hire Me</button>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="mobile-nav">
+      <div class="logo">M88</div>
+      <div class="mobile-menu">
+        <div class="navigator-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+          <li><a href="faqs.html" onclick="toggleMenu()">FAQs</a></li>
+          <li><a href="hire.html" onclick="toggleMenu()">Hire Me</a></li>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="page-title">
+    <div id="stitle">
+      <h1>Services & Pricing</h1>
+      <div class="subtitle">
+        <a href="">How do I pick my prices?</a><p> && </p><a href="">What's the procedure?</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="service-cards">
+    <!-- Service Card 1 -->
+    <div class="service-card">
+      <div class="service-name">Web Programming</div>
+      <div class="service-header">
+        <span class="service">Service</span>
+        <span class="price">Price</span>
+      </div>
+      <hr class="service-divider">
+      <div class="service-details">
+        <div class="service-feature">
+          <span class="included-item">SEO Optimization</span>
+          <span class="price-detail">Varies</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">Maintenance & Updates</span>
+          <span class="price-detail">$200</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Card 2 -->
+    <div class="service-card">
+      <div class="service-name">UI/UX Design</div>
+      <div class="service-header">
+        <span class="service">Service</span>
+        <span class="price">Price</span>
+      </div>
+      <hr class="service-divider">
+      <div class="service-details">
+        <div class="service-feature">
+          <span class="included-item">Prototyping</span>
+          <span class="price-detail">$500</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">Wireframing</span>
+          <span class="price-detail">Varies</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Card 3 -->
+    <div class="service-card">
+      <div class="service-name">Digital Marketing</div>
+      <div class="service-header">
+        <span class="service">Service</span>
+        <span class="price">Price</span>
+      </div>
+      <hr class="service-divider">
+      <div class="service-details">
+        <div class="service-feature">
+          <span class="included-item">Content Creation</span>
+          <span class="price-detail">Varies</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">Analytics & Reporting</span>
+          <span class="price-detail">$150</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hire Me Button (Mobile Only) -->
+  <button class="hire-me-cta" onclick="location.href='hire.html'">Hire Me</button>
+  <!-- Back to Top Button -->
+  <button id="back-to-top">↑</button>
+
+  <section id="page-end">
+    <footer>
+      <p>&copy; 2025 Maestro88. All rights reserved.</p>
+    </footer>
+  </section>
+
+  <script src="./script.js"></script>
+</body>
+</html>
