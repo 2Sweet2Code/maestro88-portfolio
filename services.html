@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./services-more/servicesdstyle.css" />
     <link rel="stylesheet" type="text/css" href="desktopstyle.css" />
     <link rel="stylesheet" type="text/css" href="mobilestyle.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
 </head>
 <body>
   <header>
@@ -43,7 +47,7 @@
     <div id="stitle">
       <h1>Services & Pricing</h1>
       <div class="subtitle">
-        <a href="">How do I pick my prices?</a><p> && </p><a href="">What's the procedure?</a>
+        <a href="faqs.html#faq-prices" id="link-prices">How do I pick my prices?</a><p> && </p><a href="faqs.html#faq-job" id="link-job">What's the procedure?</a>
       </div>
     </div>
   </section>
@@ -59,18 +63,59 @@
       <hr class="service-divider">
       <div class="service-details">
         <div class="service-feature">
-          <span class="included-item">SEO Optimization</span>
-          <span class="price-detail">Varies</span>
+          <span class="included-item">Website Development </span>
+          <span class="price-detail">$300 - $1,500+</span>
         </div>
         <hr class="service-divider">
         <div class="service-feature">
-          <span class="included-item">Maintenance & Updates</span>
-          <span class="price-detail">$200</span>
+          <span class="included-item">Website Update/Debug</span>
+          <span class="price-detail">$100 - $500</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">Wordpress,Wix etc websites</span>
+          <span class="price-detail">$300 - $800+</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">Campaign Website</span>
+          <span class="price-detail">$200 - $700</span>
         </div>
       </div>
     </div>
 
     <!-- Service Card 2 -->
+    <div class="service-card">
+      <div class="service-name">Graphic Design</div>
+      <div class="service-header">
+        <span class="service">Service</span>
+        <span class="price">Price</span>
+      </div>
+      <hr class="service-divider">
+      <div class="service-details">
+        <div class="service-feature">
+          <span class="included-item">Logo Design</span>
+          <span class="price-detail">$300 - $500</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">Header Design</span>
+          <span class="price-detail">$100 - $300</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">Thumbnails for Videos</span>
+          <span class="price-detail">$20 - $50/piece</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">Social Media Posts</span>
+          <span class="price-detail">$30 - $100/post</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Card 3 -->
     <div class="service-card">
       <div class="service-name">UI/UX Design</div>
       <div class="service-header">
@@ -80,20 +125,30 @@
       <hr class="service-divider">
       <div class="service-details">
         <div class="service-feature">
-          <span class="included-item">Prototyping</span>
-          <span class="price-detail">$500</span>
+          <span class="included-item">Wireframing and Prototyping</span>
+          <span class="price-detail">$200 - $500</span>
         </div>
         <hr class="service-divider">
         <div class="service-feature">
-          <span class="included-item">Wireframing</span>
-          <span class="price-detail">Varies</span>
+          <span class="included-item">Website Design</span>
+          <span class="price-detail">$150 - $400+/page</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">Website UI Update</span>
+          <span class="price-detail">$150 - $300</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">App Interface Design</span>
+          <span class="price-detail">$300 - $800</span>
         </div>
       </div>
     </div>
 
-    <!-- Service Card 3 -->
+    <!-- Service Card 4 -->
     <div class="service-card">
-      <div class="service-name">Digital Marketing</div>
+      <div class="service-name">Social Media</div>
       <div class="service-header">
         <span class="service">Service</span>
         <span class="price">Price</span>
@@ -101,17 +156,123 @@
       <hr class="service-divider">
       <div class="service-details">
         <div class="service-feature">
-          <span class="included-item">Content Creation</span>
-          <span class="price-detail">Varies</span>
+          <span class="included-item">Social Media Management</span>
+          <span class="price-detail">$150 - $500+<br> per month</span>
         </div>
         <hr class="service-divider">
         <div class="service-feature">
-          <span class="included-item">Analytics & Reporting</span>
-          <span class="price-detail">$150</span>
+          <span class="included-item">Content Strategy</span>
+          <span class="price-detail">$150 - $300</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">Campaign Planning</span>
+          <span class="price-detail">$150 - $400</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">Social Media Post Design</span>
+          <span class="price-detail">$30 - $100</span>
         </div>
       </div>
     </div>
+
+    <!-- Service Card 5 -->
+    <div class="service-card">
+      <div class="service-name">Copywriting</div>
+      <div class="service-header">
+        <span class="service">Service</span>
+        <span class="price">Price</span>
+      </div>
+      <hr class="service-divider">
+      <div class="service-details">
+        <div class="service-feature">
+          <span class="included-item">Tagline and Slogan</span>
+          <span class="price-detail">$100 - $300</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">Ads Copywriting</span>
+          <span class="price-detail">$100 - $200/ad</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">Website Copywriting</span>
+          <span class="price-detail">$150 - $400</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">Social Media Posts/Captions</span>
+          <span class="price-detail">$20 - $50<br>per post</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Card 6 -->
+    <div class="service-card">
+      <div class="service-name">Marketing</div>
+      <div class="service-header">
+        <span class="service">Service</span>
+        <span class="price">Price</span>
+      </div>
+      <hr class="service-divider">
+      <div class="service-details">
+        <div class="service-feature">
+          <span class="included-item">Ad Campaign</span>
+          <span class="price-detail">$200 - $800+</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">SEO Optimization</span>
+          <span class="price-detail">$150 - $400/page</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">Market Research</span>
+          <span class="price-detail">$150 - $500</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">Calendar & Media Strategy</span>
+          <span class="price-detail">$150 - $400</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Card 6 -->
+    <div class="service-card">
+      <div class="service-name">More</div>
+      <div class="service-header">
+        <span class="service">Service</span>
+        <span class="price">Price</span>
+      </div>
+      <hr class="service-divider">
+      <div class="service-details">
+        <div class="service-feature">
+          <span class="included-item">Business Graphics<br>Presentations,Charts etc</span>
+          <span class="price-detail">$100 - $300</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">Consulting w/ Me for projects, <br>websites,social media etc</span>
+          <span class="price-detail">$100 - $200<br>per session</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">Renovating old channels,<br>websites,social media etc</span>
+          <span class="price-detail">$150 - $500</span>
+        </div>
+        <hr class="service-divider">
+        <div class="service-feature">
+          <span class="included-item">Anything else you think i can do</span>
+          <span class="price-detail">HMU</span>
+        </div>
+      </div>
+    </div>
+
   </section>
+
+  <div id="prevproj"><a href="https://github.com/2Sweet2Code/previousprojects" target=”_blank”><b>| Previous Projects |</b></a></div>
 
   <!-- Hire Me Button (Mobile Only) -->
   <button class="hire-me-cta" onclick="location.href='hire.html'">Hire Me</button>

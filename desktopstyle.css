@@ -216,6 +216,12 @@ a:hover {
   position: relative;
 }
 
+#SectionImage img{
+  height: 550px;
+  width: 412px;
+}
+
+
 #SectionText{
   margin-left: 4rem;
   position: relative;

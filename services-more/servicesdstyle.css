@@ -1,43 +1,3 @@
-.subtitle a{
-  color: rgb(0, 25, 87);
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.subtitle p{
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#stitle h1{
-  margin-top: 5vh;
-  font-size: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* General Body and Layout Adjustments */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Service Card Container */
-#service-cards {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px; /* Adjusted gap between cards */
-  padding: 30px;
-  flex-wrap: wrap;
-}
-
 /* General Body and Layout Adjustments */
 body {
   font-family: Arial, sans-serif;
@@ -60,27 +20,16 @@ body {
   border-radius: 8px;
   padding: 30px;
   margin-bottom: 30px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgb(102, 102, 102); /* Uniform black border for all cards */
+  box-shadow: none; /* No additional shadow */
   width: 300px; /* Set a fixed width for each card */
   transition: all 0.3s ease;
 }
 
-/* Add different pastel colors for each card */
-.service-card:nth-child(1) {
-  border: 2px solid #ffadad;
-}
-
-.service-card:nth-child(2) {
-  border: 2px solid #ffd6a5;
-}
-
-.service-card:nth-child(3) {
-  border: 2px solid #fdffb6;
-}
-
-/* Hover effect for the cards */
+/* Hover effect for all cards */
 .service-card:hover {
   transform: translateY(-5px);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
 }
 
 /* Service Name (Top Left) */
@@ -88,7 +37,7 @@ body {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #4CAF50;
+  color: #000000;
 }
 
 /* Service Header Section (Price & Service Titles) */
@@ -106,7 +55,7 @@ body {
 
 .service-header .price {
   font-weight: bold;
-  color: #4CAF50;
+  color: #0d8a12;
 }
 
 /* Divider Lines Between Sections */
@@ -144,6 +93,38 @@ body {
   margin-bottom: 50px;
 }
 
+/* Subtitle and Link Styling */
+.subtitle a {
+  color: rgb(0, 25, 87);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtitle p {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#prevproj {
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+#stitle h1 {
+  margin-top: 5vh;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Mobile Adjustments */
 @media (max-width: 1200px) {
   #service-cards {
@@ -174,30 +155,29 @@ body {
     z-index: 1000;
     transition: background-color 0.3s, transform 0.3s;
   }
-  
+
   .hire-me-cta:focus-visible {
     box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
   }
-  
+
   .hire-me-cta:hover {
     background-color: #000000;
     color: #FFFFFF;
   }
-  
+
   .hire-me-cta:active {
     background-color: #000000;
     border-color: #000000;
     transform: scale(.96);
     color: #FFFFFF;
   }
-  
+
   .hire-me-cta:disabled {
     border-color: #DDDDDD;
     color: #DDDDDD;
     cursor: not-allowed;
     opacity: 1;
   }
-  
 }
 
 /* Hide the Hire Me Button on Desktop */

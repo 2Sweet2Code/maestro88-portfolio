@@ -7,46 +7,201 @@
     <title>FAQS / Maestro88</title>
     <link rel="stylesheet" type="text/css" href="desktopstyle.css" />
     <link rel="stylesheet" type="text/css" href="mobilestyle.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <style>
+      /* Modernize the Hire Me Section */
+      #hire-me {
+        padding: 40px 20px;
+        background-color: #ffffff;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 40px 0;
+      }
+
+      #hire-me h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      #hire-me p {
+        font-size: 1.1rem;
+        color: #555;
+        margin-bottom: 30px;
+      }
+
+      #hire-me ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      #hire-me ul li {
+        margin: 15px 0;
+        font-size: 1.2rem;
+      }
+
+      #hire-me ul li a {
+        color: #000000;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      #hire-me ul li a:hover {
+        color: #2e2e2e;
+      }
+
+      /* Styling the contact form */
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+      }
+
+      form input, form textarea {
+        margin-bottom: 15px;
+        padding: 12px;
+        border: 2px solid #ddd;
+        border-radius: 6px;
+        font-size: 1rem;
+        outline: none;
+        transition: border-color 0.3s;
+      }
+
+      form input:focus, form textarea:focus {
+        border-color: #007bff;
+      }
+
+      form button {
+        padding: 12px;
+        background-color: #000000;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      form button:hover {
+        background-color: #363636;
+      }
+
+      /* Small devices */
+      @media (max-width: 600px) {
+        #hire-me {
+          padding: 20px 10px;
+        }
+
+        #hire-me h2 {
+          font-size: 2rem;
+        }
+
+        #hire-me p {
+          font-size: 1rem;
+        }
+
+        form {
+          width: 100%;
+          padding: 20px;
+        }
+      }
+    </style>
 </head>
-<style></style>
 <body>
   <header>
-    <!-- Navigation Bari Desktop -->
-      <nav id="desktop-nav">
-        <div class="logo">M88</div>
-        <div>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Pricing</a></li>
-            <li><a href="faqs.html">FAQs</a></li>
-          </ul>
+    <!-- Navigation Bar Desktop -->
+    <nav id="desktop-nav">
+      <div class="logo">M88</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Pricing</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Navigation Bar Mobile -->
+    <nav id="mobile-nav">
+      <div class="logo">M88</div>
+      <div class="mobile-menu">
+        <div class="navigator-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </nav>
-
-    <!-- Navigation Bari Mobile -->
-      <nav id="mobile-nav">
-        <div class="logo">M88</div>
-        <div class="mobile-menu">
-          <div class="navigator-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu-links">
-            <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
-            <li><a href="services.html" onclick="toggleMenu()">Pricing</a></li>
-            <li><a href="faqs.html" onclick="toggleMenu()">FAQs</a></li>
-          </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+          <li><a href="services.html" onclick="toggleMenu()">Pricing</a></li>
+          <li><a href="faqs.html" onclick="toggleMenu()">FAQs</a></li>
         </div>
-      </nav>
+      </div>
+    </nav>
+  </header>
 
-    </header>
-    
-    <Section>
-    </Section>
+  <!-- Hire Me Section -->
+  <section id="hire-me">
+    <h2>Get In Touch!</h2>
+    <p>If you're looking for high-quality digital services, feel free to reach out through any of the platforms below:</p>
+    <ul>
+      <li><a href="https://www.upwork.com/freelancers/~013881c59863503441?mp_source=share" target="_blank">Upwork</a></li>
+      <li><a href="https://www.fiverr.com/s/Ay7daPa" target="_blank">Fiverr</a></li>
+      <li><a href="https://twitter.com/ertonmara" target="_blank">Twitter</a></li>
+    </ul>
 
-    
-<script src="./script.js"></script>
-    
+    <p>Or, if you prefer, you can reach out via email:</p>
+
+    <!-- Contact Form -->
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script src="./script.js"></script>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    emailjs.init("Gon4DErHFeeM4yZeh");
+
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      emailjs.sendForm("service_pto7wlm", "template_oeqenxw", this)
+        .then(function(response) {
+          alert("Message sent successfully!");
+        }, function(error) {
+          alert("Failed to send message. Please try again later.");
+        });
+    });
+  </script>
+
+<!-- Back to Top Button -->
+<button id="back-to-top">↑</button>
+
+  <section id="page-end">
+    <footer>
+      <p>&copy; 2025 Maestro88. All rights reserved.</p>
+    </footer>
+  </section>
 </body>
 </html>
