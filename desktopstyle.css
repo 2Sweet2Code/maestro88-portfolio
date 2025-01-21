@@ -26,6 +26,14 @@ p {
   color: black;
 }
 
+.logo a{
+  text-decoration: none;
+}
+
+.logo a:hover{
+  cursor: pointer;
+}
+
 /* TRANSITION */
 
 a,
